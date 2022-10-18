@@ -1,0 +1,10 @@
+<% layout('layouts/boilerplate') %>
+
+<h3>My files</h3>
+
+<% for(let summery of summeries) { %>
+
+    <ul>
+        <li><a href="/summeries/<%= summery._id%>"><%= summery.title %> </a></li>
+    </ul>
+<% } %> 

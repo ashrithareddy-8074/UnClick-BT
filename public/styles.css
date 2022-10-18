@@ -1,0 +1,81 @@
+.backgroundImg
+{
+    height: 94.6vh;
+    width: 100%;
+    background-color: #e9d5ff;
+}
+.tagline
+{
+    padding-top:10rem;
+    padding-left: 2rem;
+}
+.taglineBottom
+{
+    padding-top: 2rem;
+    padding-left: 13rem;
+}
+.pencilImg
+{
+    height: 40vh;
+}
+.leftImg
+{
+    margin:2rem;
+    margin-left:20rem;
+}
+.rightBtn
+{
+    margin-top:10rem;
+}
+.exploreBtn
+{
+    background-color: blueviolet;
+    color: white;
+}
+.mainContent
+{
+    background-color: #f3e9ff;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innerContent
+{
+    background-color: white;
+    height: 75vh;
+    width: 84%;
+    border: 1px solid #c0aed6;
+    box-shadow: 2px 2px 5px #6b21a8;
+}
+
+.mainField
+{
+    height: 75vh;
+}
+.inputContent
+{
+    padding: 0;
+    border-right: 1px solid #c0aed6;
+    padding-right: 0.5rem;
+}
+.submitBtn
+{
+    margin: 2rem;
+    background-color: #6b21a8;
+    color: white;
+}
+.labelText
+{
+    padding: 1rem;
+}
+.innerBox
+{
+    height: 50vh;
+    margin: 1rem;
+    border: 1px solid #c0aed6;
+}
+.head6
+{
+    margin: 1rem;
+}

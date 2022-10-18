@@ -1,0 +1,33 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark navbar-custom " style="background-color:#6b21a8; color:white; ">
+  <div class="container-fluid " style="height: 5.4vh;">
+   
+       <a class="navbar-brand" href="#">
+         <img src="/logo.jpeg" class="rounded-start" alt="logo" width="35px" height="35px">
+         summaRise</a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+     <div class="collapse navbar-collapse " id="navbarNav">
+         
+         <div>
+         <ul class="navbar-nav">
+           <li class="nav-item">
+             <a class="nav-link" style="color:white;" aria-current="page" href="/">Home</a>
+           </li>
+         </ul>
+         </div>
+         <div class="navbar-nav ms-auto " >
+           <% if(!currentUser) {%> 
+           <a href="/login" style="color:white;" class="nav-link">Login</a>
+           <a href="/register" style="color:white;"  class="nav-link">Register</a>
+           <% } %> 
+           <% if(currentUser) { %> 
+           <a href="/logout" style="color:white;" class="nav-link">Logout</a>
+          <% } %> 
+         </div>
+     </div>
+       
+       
+  </div>
+ </nav>
+ 

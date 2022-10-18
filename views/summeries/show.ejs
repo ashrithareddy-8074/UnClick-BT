@@ -1,0 +1,13 @@
+<% layout('layouts/boilerplate') %>
+<h1><%= summery.title %> </h1>
+<p>
+    <%= summery.body %> 
+</p>
+<a href="/summeries/<%= summery._id %>/edit">edit</a>
+<form action="/summeries/<%= summery._id %>?_method=DELETE" method="POST">
+<button>Delete</button></form>
+<!-- <form action="/summeries/play/" method="POST">
+    <input type="text" id="play" name="play" value="<%= summery.body %> ">
+   <button>Play</button>
+</form> -->
+<a href="/summeries/">View all summeries</a>
