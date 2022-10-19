@@ -1,49 +1,57 @@
 <% layout('layouts/boilerplate') %>
 
 <div class="backgroundImg container-fluid">
-    <h3 class="tagline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste soluta qui quod mollitia voluptates consequuntur.</h3>
-    <h4 class="taglineBottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, voluptatem!</h4>
-    <div class="row">
-        <div class="col-6">
-            <div class="leftImg">
-                <img src="/pencil.png" class="pencilImg" alt="error">
-            </div>
-        </div>
-        <div class="col-6">
-            <div class="rightBtn">
-                <button class="exploreBtn btn btn-lg">Explore</button>
-            </div>
-        </div>
+  <h3 class="tagline">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste soluta qui
+    quod mollitia voluptates consequuntur.
+  </h3>
+  <h4 class="taglineBottom">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, voluptatem!
+  </h4>
+  <div class="row">
+    <div class="col-6">
+      <div class="leftImg">
+        <img src="/pencil.png" class="pencilImg" alt="error" />
+      </div>
     </div>
+    <div class="col-6">
+      <div class="rightBtn">
+        <button class="exploreBtn btn btn-lg">Explore</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="mainContent container-fluid">
-    <div class="innerContent container-fluid">
-        <div class="row">
-            <div class="col">
-                <div class="inputContent mainField">
-                  <form action="/predict" class="inputText">
-                    <label for="floatingTextarea2" class="labelText">Enter text:</label>
-                    <textarea class="form-control" placeholder="Enter your text here" id="floatingTextarea2" style="height:45vh"></textarea>
-                    <button class="btn btn-lg submitBtn">Submit</button>
-                </form>
-                </div>
-                </div>
-            <div class="col">
-                <div class=" resultContent mainField ">
-                    <h6 class="head6">Result:</h6>
-                    <div class="innerBox">
-
-                    </div>
-                    <form action="/summeries" method="POST">
-                        <label for="body">Body:</label>
-                        <input type="text" id="body" name="body">
-                        <label for="title">Title:</label>
-                        <input type="text" id="title" name="title">
-                        <button>Save</button>
-                    </form>
-                </div>  
-            </div>
+  <div class="innerContent container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="inputContent mainField">
+          <form action="/predict" class="inputText">
+            <label for="floatingTextarea2" class="labelText">Enter text:</label>
+            <textarea
+              class="form-control"
+              placeholder="Enter your text here"
+              id="floatingTextarea2"
+              style="height: 45vh"
+            ></textarea>
+            <button class="btn btn-lg submitBtn">Submit</button>
+          </form>
         </div>
+      </div>
+      <div class="col">
+        <div class="resultContent mainField">
+          <h6 class="head6">Result:</h6>
+          <div class="innerBox"></div>
+          <form action="/summeries" method="POST">
+            <label for="body">Body:</label>
+            <input type="text" id="body" name="body" />
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" />
+            <button>Save</button>
+          </form>
+        </div>
+      </div>
     </div>
+  </div>
 </div>

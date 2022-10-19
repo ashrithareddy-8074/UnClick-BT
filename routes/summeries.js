@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Summery = require('../models/summery');
+const gtts = require('node-gtts')('en');
 
 router.get('/', async(req, res) => {
     const summeries = await Summery.find({});
@@ -12,6 +13,15 @@ router.post('/', async(req, res) => {
     await summery.save();
     req.flash('success', 'successfully added');
     res.redirect('/');
+})
+
+router.get('/hear', (req, res) =>
+{
+    console.log('hello')
+    console.log(req.query.play)
+    console.log(req.query.lang)
+    res.set({'Content-Type': 'audio/mpeg'});
+    gtts.stream(req.query.play).pipe(res);
 })
 
 router.get('/:id', async(req, res) =>
@@ -52,20 +62,6 @@ router.delete('/:id', async(req, res) =>
     await Summery.findByIdAndDelete(id);
     req.flash('error', 'deleted');
     res.redirect('/summeries')
-})
-
-router.post('/play', (req, res) =>
-{
-    const text = req.body.play;
-    const speech = new gtts(text)
-    speech.save("audio.mp3")
-    .then(() => {
-        res.download("audio.mp3")
-    })
-    .catch((e) =>
-    {
-        console.log(e);
-    })
 })
 
 module.exports = router;
