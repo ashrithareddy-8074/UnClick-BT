@@ -9,7 +9,7 @@ const ExpressError =  require('./utils/ExpressError');
 const multer = require('multer');
 const fs = require('fs');
 const pdf = require('pdf-parse');
-
+const T = require('tesseract.js');
 
 const userRoutes = require('./routes/users');
 const summeryRoutes = require('./routes/summeries');
@@ -92,9 +92,20 @@ app.post('/filesubmission' ,upload.single('new'), (req, res) =>
 
 app.post('/imagesubmission' ,upload.single('img') , (req, res) =>
 {
+    let text;
     console.log(req.file);
-    res.send('image upload successful');
-})
+    T.recognize(req.file.path, 'eng', {logger: e => console.log(e)})
+    .then( (out) => 
+    {
+    // {console.log(out.data.text)
+        text = out.data.text;
+        console.log(text);
+        return res.render('imageconfirmation.ejs', {text});
+    }
+    )
+    .catch((e) => console.log(e))
+    
+});
 
 app.use('/', userRoutes);
 app.use('/summeries', summeryRoutes);
