@@ -37,12 +37,24 @@
             ></textarea>
             <button class="btn btn-lg submitBtn">Submit</button>
           </form>
+          <form action="/filesubmission" method="POST" enctype="multipart/form-data">
+            <input type="file" id="myfile" name="new">
+            <button>Submit</button>
+          </form>
+          <form action="/imagesubmission" method="POST" enctype="multipart/form-data">
+            <label for="img">Select image:</label>
+            <input type="file" id="img" name="img" value="img" accept="image/*">
+            <input type="submit">
+          </form>
         </div>
       </div>
       <div class="col">
         <div class="resultContent mainField">
           <h6 class="head6">Result:</h6>
-          <div class="innerBox"></div>
+          <div class="innerBox">
+            <p></p>
+            </p>
+          </div>
           <form action="/summeries" method="POST">
             <label for="body">Body:</label>
             <input type="text" id="body" name="body" />
