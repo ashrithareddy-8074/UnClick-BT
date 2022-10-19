@@ -6,8 +6,5 @@
 <a href="/summeries/<%= summery._id %>/edit">edit</a>
 <form action="/summeries/<%= summery._id %>?_method=DELETE" method="POST">
 <button>Delete</button></form>
-<!-- <form action="/summeries/play/" method="POST">
-    <input type="text" id="play" name="play" value="<%= summery.body %> ">
-   <button>Play</button>
-</form> -->
+   <a href="/summeries/hear?play=<%= summery.body %>&lang=en">play</a>
 <a href="/summeries/">View all summeries</a>
