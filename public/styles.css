@@ -2,17 +2,23 @@
 {
     height: 94.6vh;
     width: 100%;
-    background-color: #e9d5ff;
+    /* background-color: #253bb3;
+    background-color: #338796; */
+    background-color: #256D85;
+    color: white;
+    /* background-color: #25acb3; */
 }
 .tagline
 {
     padding-top:10rem;
     padding-left: 2rem;
+    font-family: 'Playfair Display', serif;
 }
 .taglineBottom
 {
     padding-top: 2rem;
     padding-left: 13rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .pencilImg
 {
@@ -29,12 +35,14 @@
 }
 .exploreBtn
 {
-    background-color: blueviolet;
+    background-color:#06283D;
     color: white;
 }
 .mainContent
 {
-    background-color: #f3e9ff;
+    /* background-color: #f3e9ff; */
+    /* background-color: #47B5FF; */
+    background-color: #47edff;
     height: 95vh;
     display: flex;
     justify-content: center;
@@ -79,3 +87,23 @@
 {
     margin: 1rem;
 }
+
+.gradient-custom-2 {
+    background: #fccb90;
+    
+    background: -webkit-linear-gradient(to right, #8BBCCC, #4C6793, #5C2E7E, #000000);
+    
+    background: linear-gradient(to right,  #8BBCCC, #4C6793, #5C2E7E, #000000);
+    }
+    
+    @media (min-width: 768px) {
+    .gradient-form {
+    height: 100vh !important;
+    }
+    }
+    @media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+    }
