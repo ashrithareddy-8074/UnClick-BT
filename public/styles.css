@@ -56,7 +56,22 @@
     border: 1px solid #c0aed6;
     box-shadow: 2px 2px 5px #6b21a8;
 }
-
+.mainArea
+{
+    height: 97vh;
+    background-color: #14c9c6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innerArea
+{
+    height: 80vh;
+    width: 80%;
+    background-color: white;
+    border: 1px solid rgb(4, 74, 95);
+    box-shadow: 4px 4px 5px #036671;
+}
 .mainField
 {
     height: 75vh;
@@ -70,8 +85,9 @@
 .submitBtn
 {
     margin: 2rem;
-    background-color: #6b21a8;
+    background-color:#06283D ;
     color: white;
+    
 }
 .labelText
 {
@@ -107,3 +123,67 @@
     border-bottom-right-radius: .3rem;
     }
     }
+
+    .head3
+    {
+        padding: 1rem;
+        text-align: center;
+        color: white;
+        font-family: 'Playfair Display', serif;;
+        text-shadow:0.5px 0.5px #ff0000;
+    }
+
+   
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.fileList
+{
+    background-color: #256D85;
+    height: 100vh;
+}
+
+.viewLink
+{
+    text-decoration: none;
+    color: black;
+}
+
+.fileShow
+{
+    background-color: #256D85;
+    height: 100vh;
+    padding: 3rem;
+}
+
+.showLink
+{
+    text-decoration: none;
+    color: black;
+}
+
+.showEdit
+{
+    background-color:#256D85;
+    height: 100vh;
+}
+.formElement
+{
+    padding: 3rem;
+}
+.updateBtn
+{
+    background-color: #06283D;
+    color: white;
+}
+.summaryPage, .imageconfirmationPage, .fileconfirmationPage
+{
+    background-color: #256D85;
+    color: White;
+    height: 100vh;
+}
