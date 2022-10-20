@@ -81,7 +81,8 @@ app.use((req, res, next) =>
 
 app.post('/predict', (req, res) =>
 {
-    fetch('https://634ed863f34e1ed82697c3be.mockapi.io/api/summary')
+    const textValue = req.body.inputField;
+    fetch('https://634ed863f34e1ed82697c3be.mockapi.io/api/summary' )
     .then((response) => response.json())
     .then((data) => 
     {

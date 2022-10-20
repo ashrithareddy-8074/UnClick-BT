@@ -1,10 +1,11 @@
 <% layout('layouts/boilerplate') %>
 <div class="summaryPage">
 <h3 class="head3">Summary</h3>
-
+<div class="container">
 <p>
     <%= data %> 
-</p>
+  </p>
+</div>
 <form action="/summeries" method="POST" class="container">
 <textarea name="body" id="body"  class="summaryText" hidden="hidden">
     <%= data %> 
