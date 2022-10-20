@@ -1,6 +1,5 @@
 const ExpressError = require('./utils/ExpressError');
 const Summery = require('./models/summery')
-const {summerySchema} = require('./schemas.js')
 
 module.exports.isLoggedIn = (req, res, next) => {
     if(!req.isAuthenticated())
