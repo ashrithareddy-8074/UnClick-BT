@@ -2,28 +2,26 @@
 
 <div class="backgroundImg container-fluid">
   <div class="row">
-    <div class="col">
-  <h3 class="tagline">
+    <div class="col-lg-6">
+  <h3 class="tagline text-center">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste soluta qui
     quod mollitia voluptates consequuntur.
   </h3>
-  <!-- <h4 class="taglineBottom">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, voluptatem!
-  </h4> -->
-  <div class="rightBtn">
-    <button class="exploreBtn btn btn-lg">Explore</button>
+  <div class="rightBtn text-center ">
+   
+      <a href="#jump" style="text-decoration: none;"> <button class="exploreBtn btn btn-lg text-center">Explore</button> </a>
   </div>
 </div>
-  <div class="col">
-<!-- 
-      <div class="leftImg">
-        <img src="/pencil.png" class="pencilImg" alt="error" />
-      </div> -->
-  </div>
+  <div class="col-lg-6 imageField">
+
+      <div class="mainImage">
+        <img src="/main.jpg" class="pencilImg" alt="error" />
+      </div>
+    </div>
 </div>
 </div>
 
-<div class="mainArea conatainer-fluid">
+<div class="mainArea conatainer-fluid" id="jump">
   <div class="innerArea container-fluid">
     <div class="inputArea">
       <form action="/predict" method="POST">
@@ -68,37 +66,3 @@
   
   </div>
 </div>
-
-<!-- <div class="mainContent container-fluid">
-  <div class="innerContent container-fluid">
-<div class="inputContent mainField">
-    <form action="/predict" class="inputText" method="POST">
-        <label for="floatingTextarea2" class="labelText">Enter text:</label>
-            <textarea
-              class="form-control"
-              placeholder="Enter your text here"
-              id="inputField" name="inputField"
-              style="height: 45vh"
-            ></textarea>
-            <div class="text-center pt-1  pb-1">
-              <button class="btn  btn-block mb-3 updateBtn" >Submit
-                </button>
-            </div>
-            <div class="text-center pt-1 mb-5 pb-1">
-                  OR
-            </div>
-    </form>
-          <form action="/filesubmission" method="POST" enctype="multipart/form-data">
-            <input type="file" id="myfile" name="new">
-            <button>Submit</button>
-          </form>
-          <form action="/imagesubmission" method="POST" enctype="multipart/form-data">
-            <label for="img">Select image:</label>
-            <input type="file" id="img" name="img" value="img" accept="image/*">
-            <input type="submit">
-          </form>
-        </div>
-
-
-    </div>
-  </div> -->

@@ -2,15 +2,12 @@
 {
     height: 94.6vh;
     width: 100%;
-    /* background-color: #253bb3;
-    background-color: #338796; */
     background-color: #256D85;
     color: white;
-    /* background-color: #25acb3; */
 }
 .tagline
 {
-    padding-top:10rem;
+    padding-top:12rem;
     padding-left: 2rem;
     font-family: 'Playfair Display', serif;
 }
@@ -20,18 +17,15 @@
     padding-left: 13rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.pencilImg
+.imageField
 {
-    height: 40vh;
-}
-.leftImg
-{
-    margin:2rem;
-    margin-left:20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .rightBtn
 {
-    margin-top:10rem;
+    margin-top:8rem;
 }
 .exploreBtn
 {
@@ -40,8 +34,6 @@
 }
 .mainContent
 {
-    /* background-color: #f3e9ff; */
-    /* background-color: #47B5FF; */
     background-color: #47edff;
     height: 95vh;
     display: flex;
