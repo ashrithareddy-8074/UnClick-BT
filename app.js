@@ -10,6 +10,7 @@ const multer = require('multer');
 const fs = require('fs');
 const pdf = require('pdf-parse');
 const T = require('tesseract.js');
+const fetch = require('node-fetch');
 
 const userRoutes = require('./routes/users');
 const summeryRoutes = require('./routes/summeries');
@@ -76,6 +77,17 @@ app.use((req, res, next) =>
     res.locals.success = req.flash('success');
     res.locals.error = req.flash('error');
     next();
+})
+
+app.post('/predict', (req, res) =>
+{
+    fetch('https://634ed863f34e1ed82697c3be.mockapi.io/api/summary')
+    .then((response) => response.json())
+    .then((data) => 
+    {
+        res.render('summary', {data});
+    }
+    );
 })
 
 app.post('/filesubmission' ,upload.single('new'), (req, res) =>
